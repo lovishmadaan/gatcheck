@@ -36,6 +36,17 @@ We are working with four datasets:
 
 They can be downloaded by running the `get_data.sh` script. The communities dataset is loaded by the networkx library.
 
+## Folder
+
+The repository consist of four folders:
+
+- nc - This folder conatins code for node classification and is based on dgl library
+- lp_pnc - This folder conatins code for Link Prediction & Pairwise Node Classification with cross validation and is based on P-GNN code made public
+- brightkite_lp - This is similar to folder above and it consists of the heurestics that we adopted to make our approach scalable.
+- lp-eval - This consists of code base that we used for our hyperparameter tuning to perform our analyis on grid datasets
+
+They can be downloaded by running the `get_data.sh` script. The communities dataset is loaded by the networkx library.
+
 ## References
 
 The baseline code was forked from the following repositories:
