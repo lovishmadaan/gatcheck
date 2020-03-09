@@ -1,0 +1,89 @@
+Namespace(anchor_num=64, approximate=2, attention_heads=1, batch_size=1, cache=False, comment='0', cuda='3', dataset='brightkite', dropout=True, epoch_log=10, epoch_num=110, feature_dim=32, feature_pre=True, gpu=True, hidden_dim=32, layer_num=3, lr=0.01, model='GAT', normalize_adj=False, out_attention_heads=1, output_dim=32, permute=True, remove_link_ratio=0.2, repeat_num=2, rm_feature=False, task='link')
+Using GPU 3
+Loading data...
+Not found features
+6566
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (8,) TEST: (1,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (20,) TEST: (4,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (68,) TEST: (16,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+Cache saved!
+brightkite load time 3052.451515197754
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min14, mean76706.5
+Anchor num 64, Batch size 1
+Traceback (most recent call last):
+  File "main_brightkite.py", line 105, in <module>
+    out = model(data[k])
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/sid/sid_folder/COL868/P-GNN/model.py", line 196, in forward
+    x = self.linear_pre(x)
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch/nn/modules/module.py", line 532, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch/nn/functional.py", line 1370, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: arguments are located on different GPUs at /opt/conda/conda-bld/pytorch_1579040055865/work/aten/src/THC/generic/THCTensorMathBlas.cu:277

@@ -1,0 +1,85 @@
+Namespace(anchor_num=64, approximate=2, attention_heads=1, batch_size=1, cache=False, comment='0', cuda='0', dataset='brightkite', dropout=True, epoch_log=10, epoch_num=400, feature_dim=32, feature_pre=True, gpu=True, hidden_dim=32, layer_num=3, lr=0.01, model='GAT', normalize_adj=False, out_attention_heads=1, output_dim=32, permute=True, remove_link_ratio=0.2, repeat_num=2, rm_feature=False, task='link')
+Using GPU 0
+Loading data...
+Not found features
+6566
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (8,) TEST: (1,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (20,) TEST: (4,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (68,) TEST: (16,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+Cache saved!
+brightkite load time 2335.395400285721
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min14, mean76706.5
+Anchor num 64, Batch size 1
+Traceback (most recent call last):
+  File "main.py", line 77, in <module>
+    data[k] = data[k].to(device)
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch_geometric/data/data.py", line 278, in to
+    return self.apply(lambda x: x.to(device), *keys)
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch_geometric/data/data.py", line 264, in apply
+    self[key] = func(item)
+  File "/home/sid/anaconda3/envs/gat_env/lib/python3.7/site-packages/torch_geometric/data/data.py", line 278, in <lambda>
+    return self.apply(lambda x: x.to(device), *keys)
+RuntimeError: CUDA out of memory. Tried to allocate 11.99 GiB (GPU 0; 10.92 GiB total capacity; 0 bytes already allocated; 10.42 GiB free; 0 bytes reserved in total by PyTorch)

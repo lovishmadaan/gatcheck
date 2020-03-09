@@ -1,0 +1,148 @@
+Namespace(anchor_num=64, approximate=2, attention_heads=1, batch_size=1, cache=False, comment='0', cuda='3', dataset='brightkite', dropout=True, epoch_log=10, epoch_num=110, feature_dim=32, feature_pre=True, gpu=True, hidden_dim=32, layer_num=3, lr=0.01, model='GAT', normalize_adj=False, out_attention_heads=1, output_dim=32, permute=True, remove_link_ratio=0.2, repeat_num=2, rm_feature=False, task='link')
+Using GPU 3
+Loading data...
+Not found features
+6566
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+TRAIN: (153320,) TEST: (38330,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (7,) TEST: (2,)
+TRAIN: (8,) TEST: (1,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (19,) TEST: (5,)
+TRAIN: (20,) TEST: (4,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (67,) TEST: (17,)
+TRAIN: (68,) TEST: (16,)
+ok
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+ok1
+ok11
+Cache saved!
+brightkite load time 2999.4002125263214
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min14, mean76706.5
+Anchor num 64, Batch size 1
+0 0 Loss 0.7893 Train AUC: 0.8043 Val AUC: 0.5270 Test AUC: 0.5445 Train Prec: 0.7717 Val Prec: 0.6517 Test Prec: 0.6760 Train Recall: 1.0000 Val Recall: 1.0000 Test Recall: 1.0000 Train F1: 0.6667 Val F1: 0.6667 Test F1: 0.6667
+0 10 Loss 0.7091 Train AUC: 0.7872 Val AUC: 0.6217 Test AUC: 0.4349 Train Prec: 0.7589 Val Prec: 0.6981 Test Prec: 0.5823 Train Recall: 0.9935 Val Recall: 0.9214 Test Recall: 0.9154 Train F1: 0.7097 Val F1: 0.6700 Test F1: 0.6572
+0 20 Loss 0.7028 Train AUC: 0.7502 Val AUC: 0.6033 Test AUC: 0.3995 Train Prec: 0.7167 Val Prec: 0.6744 Test Prec: 0.5633 Train Recall: 0.9729 Val Recall: 0.8407 Test Recall: 0.9045 Train F1: 0.7145 Val F1: 0.6918 Test F1: 0.6611
+0 30 Loss 0.7514 Train AUC: 0.7809 Val AUC: 0.4898 Test AUC: 0.5237 Train Prec: 0.7352 Val Prec: 0.6146 Test Prec: 0.6491 Train Recall: 1.0000 Val Recall: 0.8314 Test Recall: 0.9963 Train F1: 0.6923 Val F1: 0.5833 Test F1: 0.6875
+0 40 Loss 0.7507 Train AUC: 0.7815 Val AUC: 0.5128 Test AUC: 0.5261 Train Prec: 0.7414 Val Prec: 0.6232 Test Prec: 0.6473 Train Recall: 1.0000 Val Recall: 0.8313 Test Recall: 0.9962 Train F1: 0.6820 Val F1: 0.5833 Test F1: 0.6876
+0 50 Loss 0.7494 Train AUC: 0.7946 Val AUC: 0.5186 Test AUC: 0.5300 Train Prec: 0.7499 Val Prec: 0.6330 Test Prec: 0.6485 Train Recall: 1.0000 Val Recall: 0.8313 Test Recall: 0.9963 Train F1: 0.6828 Val F1: 0.5833 Test F1: 0.6876
+0 60 Loss 0.7738 Train AUC: 0.7889 Val AUC: 0.5283 Test AUC: 0.5338 Train Prec: 0.7618 Val Prec: 0.6465 Test Prec: 0.6734 Train Recall: 1.0000 Val Recall: 0.8461 Test Recall: 0.9964 Train F1: 0.6879 Val F1: 0.5865 Test F1: 0.7142
+0 70 Loss 0.7645 Train AUC: 0.7924 Val AUC: 0.5272 Test AUC: 0.5418 Train Prec: 0.7568 Val Prec: 0.6458 Test Prec: 0.6691 Train Recall: 1.0000 Val Recall: 0.8460 Test Recall: 0.9963 Train F1: 0.6880 Val F1: 0.5866 Test F1: 0.7143
+0 80 Loss 0.7673 Train AUC: 0.7789 Val AUC: 0.5253 Test AUC: 0.5426 Train Prec: 0.7522 Val Prec: 0.6410 Test Prec: 0.6702 Train Recall: 1.0000 Val Recall: 0.8460 Test Recall: 0.9963 Train F1: 0.6880 Val F1: 0.5866 Test F1: 0.7143
+0 90 Loss 0.7779 Train AUC: 0.7914 Val AUC: 0.5226 Test AUC: 0.5125 Train Prec: 0.7595 Val Prec: 0.6355 Test Prec: 0.6529 Train Recall: 1.0000 Val Recall: 0.8461 Test Recall: 0.9964 Train F1: 0.6879 Val F1: 0.5832 Test F1: 0.7142
+0 100 Loss 0.7465 Train AUC: 0.7931 Val AUC: 0.4817 Test AUC: 0.5361 Train Prec: 0.7464 Val Prec: 0.6097 Test Prec: 0.6539 Train Recall: 0.9962 Val Recall: 0.8165 Test Recall: 0.9961 Train F1: 0.6990 Val F1: 0.5798 Test F1: 0.7133
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min14, mean76706.5
+Anchor num 64, Batch size 1
+0 0 Loss 0.8115 Train AUC: 0.8615 Val AUC: 0.5460 Test AUC: 0.3796 Train Prec: 0.8385 Val Prec: 0.6359 Test Prec: 0.5740 Train Recall: 1.0000 Val Recall: 1.0000 Test Recall: 1.0000 Train F1: 0.6667 Val F1: 0.6667 Test F1: 0.6667
+0 10 Loss 0.7977 Train AUC: 0.8478 Val AUC: 0.5342 Test AUC: 0.3715 Train Prec: 0.8379 Val Prec: 0.6325 Test Prec: 0.5477 Train Recall: 0.9999 Val Recall: 0.9814 Test Recall: 0.9959 Train F1: 0.6754 Val F1: 0.6632 Test F1: 0.6723
+0 20 Loss 0.8065 Train AUC: 0.8708 Val AUC: 0.6083 Test AUC: 0.3770 Train Prec: 0.8646 Val Prec: 0.6933 Test Prec: 0.5538 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 30 Loss 0.8086 Train AUC: 0.8869 Val AUC: 0.5867 Test AUC: 0.4230 Train Prec: 0.8745 Val Prec: 0.6996 Test Prec: 0.6080 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 40 Loss 0.8006 Train AUC: 0.8896 Val AUC: 0.5884 Test AUC: 0.5010 Train Prec: 0.8958 Val Prec: 0.7073 Test Prec: 0.6074 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 50 Loss 0.7997 Train AUC: 0.8925 Val AUC: 0.5895 Test AUC: 0.5145 Train Prec: 0.8967 Val Prec: 0.7055 Test Prec: 0.6122 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 60 Loss 0.8024 Train AUC: 0.8665 Val AUC: 0.5680 Test AUC: 0.5664 Train Prec: 0.8630 Val Prec: 0.6433 Test Prec: 0.6763 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 70 Loss 0.8088 Train AUC: 0.9024 Val AUC: 0.6050 Test AUC: 0.5231 Train Prec: 0.9033 Val Prec: 0.7154 Test Prec: 0.6191 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 80 Loss 0.8076 Train AUC: 0.9015 Val AUC: 0.5932 Test AUC: 0.5230 Train Prec: 0.9041 Val Prec: 0.7124 Test Prec: 0.6194 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 90 Loss 0.7986 Train AUC: 0.8824 Val AUC: 0.5812 Test AUC: 0.5382 Train Prec: 0.8837 Val Prec: 0.6729 Test Prec: 0.6495 Train Recall: 1.0000 Val Recall: 0.9815 Test Recall: 0.9961 Train F1: 0.6752 Val F1: 0.6598 Test F1: 0.6722
+0 100 Loss 0.8042 Train AUC: 0.8951 Val AUC: 0.5546 Test AUC: 0.5703 Train Prec: 0.8980 Val Prec: 0.6369 Test Prec: 0.6817 Train Recall: 1.0000 Val Recall: 0.9962 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min14, mean76706.5
+Anchor num 64, Batch size 1
+0 0 Loss 0.8114 Train AUC: 0.8141 Val AUC: 0.6842 Test AUC: 0.4067 Train Prec: 0.7672 Val Prec: 0.7653 Test Prec: 0.5640 Train Recall: 1.0000 Val Recall: 1.0000 Test Recall: 1.0000 Train F1: 0.6667 Val F1: 0.6667 Test F1: 0.6667
+0 10 Loss 0.7537 Train AUC: 0.7598 Val AUC: 0.6394 Test AUC: 0.4411 Train Prec: 0.7313 Val Prec: 0.6770 Test Prec: 0.5702 Train Recall: 0.9962 Val Recall: 0.9657 Test Recall: 0.9452 Train F1: 0.6911 Val F1: 0.6747 Test F1: 0.6603
+0 20 Loss 0.8027 Train AUC: 0.7617 Val AUC: 0.6867 Test AUC: 0.4479 Train Prec: 0.7454 Val Prec: 0.7073 Test Prec: 0.5786 Train Recall: 1.0000 Val Recall: 0.9960 Test Recall: 0.9959 Train F1: 0.6692 Val F1: 0.6666 Test F1: 0.6665
+0 30 Loss 0.7410 Train AUC: 0.7500 Val AUC: 0.6953 Test AUC: 0.4765 Train Prec: 0.7199 Val Prec: 0.6970 Test Prec: 0.6111 Train Recall: 0.9564 Val Recall: 0.9498 Test Recall: 0.9438 Train F1: 0.6901 Val F1: 0.7414 Test F1: 0.6759
+0 40 Loss 0.7672 Train AUC: 0.7464 Val AUC: 0.6811 Test AUC: 0.4401 Train Prec: 0.7284 Val Prec: 0.7116 Test Prec: 0.5702 Train Recall: 0.9962 Val Recall: 0.9812 Test Recall: 0.9708 Train F1: 0.6823 Val F1: 0.6779 Test F1: 0.6731
+0 50 Loss 0.8099 Train AUC: 0.8401 Val AUC: 0.6821 Test AUC: 0.3341 Train Prec: 0.8170 Val Prec: 0.7593 Test Prec: 0.5387 Train Recall: 1.0000 Val Recall: 0.9961 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 60 Loss 0.8100 Train AUC: 0.8339 Val AUC: 0.6474 Test AUC: 0.3985 Train Prec: 0.8152 Val Prec: 0.7106 Test Prec: 0.5882 Train Recall: 1.0000 Val Recall: 0.9961 Test Recall: 0.9961 Train F1: 0.6683 Val F1: 0.6665 Test F1: 0.6664
+0 70 Loss 0.8074 Train AUC: 0.7824 Val AUC: 0.7557 Test AUC: 0.4566 Train Prec: 0.7736 Val Prec: 0.7835 Test Prec: 0.5894 Train Recall: 1.0000 Val Recall: 0.9960 Test Recall: 0.9960 Train F1: 0.6691 Val F1: 0.6665 Test F1: 0.6664
+0 80 Loss 0.8077 Train AUC: 0.7956 Val AUC: 0.7577 Test AUC: 0.4625 Train Prec: 0.7814 Val Prec: 0.7796 Test Prec: 0.6039 Train Recall: 1.0000 Val Recall: 0.9960 Test Recall: 0.9960 Train F1: 0.6692 Val F1: 0.6665 Test F1: 0.6664
+0 90 Loss 0.7974 Train AUC: 0.7621 Val AUC: 0.7558 Test AUC: 0.4519 Train Prec: 0.7467 Val Prec: 0.7831 Test Prec: 0.5787 Train Recall: 1.0000 Val Recall: 0.9960 Test Recall: 0.9959 Train F1: 0.6692 Val F1: 0.6666 Test F1: 0.6665
+0 100 Loss 0.7907 Train AUC: 0.7481 Val AUC: 0.7492 Test AUC: 0.4495 Train Prec: 0.7274 Val Prec: 0.7754 Test Prec: 0.5730 Train Recall: 1.0000 Val Recall: 0.9960 Test Recall: 0.9959 Train F1: 0.6693 Val F1: 0.6666 Test F1: 0.6665
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min14, mean76706.5
+Anchor num 64, Batch size 1
+0 0 Loss 0.7971 Train AUC: 0.7614 Val AUC: 0.7168 Test AUC: 0.3623 Train Prec: 0.7518 Val Prec: 0.7430 Test Prec: 0.5508 Train Recall: 1.0000 Val Recall: 0.9821 Test Recall: 0.9970 Train F1: 0.6696 Val F1: 0.6665 Test F1: 0.6723
+0 10 Loss 0.7978 Train AUC: 0.7774 Val AUC: 0.7807 Test AUC: 0.4747 Train Prec: 0.7587 Val Prec: 0.8082 Test Prec: 0.6000 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9960 Train F1: 0.6743 Val F1: 0.6443 Test F1: 0.6785
+0 20 Loss 0.7951 Train AUC: 0.7907 Val AUC: 0.7823 Test AUC: 0.4768 Train Prec: 0.7636 Val Prec: 0.8029 Test Prec: 0.6014 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6761 Val F1: 0.6442 Test F1: 0.6784
+0 30 Loss 0.7986 Train AUC: 0.7956 Val AUC: 0.7832 Test AUC: 0.4754 Train Prec: 0.7708 Val Prec: 0.8116 Test Prec: 0.6004 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6743 Val F1: 0.6442 Test F1: 0.6784
+0 40 Loss 0.7965 Train AUC: 0.7966 Val AUC: 0.7816 Test AUC: 0.4750 Train Prec: 0.7709 Val Prec: 0.8044 Test Prec: 0.5997 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6761 Val F1: 0.6442 Test F1: 0.6784
+0 50 Loss 0.7953 Train AUC: 0.7919 Val AUC: 0.7855 Test AUC: 0.4751 Train Prec: 0.7664 Val Prec: 0.8020 Test Prec: 0.6003 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6761 Val F1: 0.6442 Test F1: 0.6784
+0 60 Loss 0.7959 Train AUC: 0.7880 Val AUC: 0.7848 Test AUC: 0.4744 Train Prec: 0.7642 Val Prec: 0.8098 Test Prec: 0.5984 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6761 Val F1: 0.6442 Test F1: 0.6784
+0 70 Loss 0.7950 Train AUC: 0.8001 Val AUC: 0.7944 Test AUC: 0.4836 Train Prec: 0.7895 Val Prec: 0.8286 Test Prec: 0.6203 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6761 Val F1: 0.6442 Test F1: 0.6784
+0 80 Loss 0.7183 Train AUC: 0.7714 Val AUC: 0.7353 Test AUC: 0.4804 Train Prec: 0.7282 Val Prec: 0.7703 Test Prec: 0.6453 Train Recall: 0.9995 Val Recall: 0.9568 Test Recall: 0.9360 Train F1: 0.7126 Val F1: 0.6993 Test F1: 0.6605
+0 90 Loss 0.7952 Train AUC: 0.5186 Val AUC: 0.4869 Test AUC: 0.5266 Train Prec: 0.5109 Val Prec: 0.4940 Test Prec: 0.5147 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6760 Val F1: 0.6442 Test F1: 0.6784
+0 100 Loss 0.7973 Train AUC: 0.7847 Val AUC: 0.7801 Test AUC: 0.4645 Train Prec: 0.7525 Val Prec: 0.7948 Test Prec: 0.5866 Train Recall: 1.0000 Val Recall: 0.9372 Test Recall: 0.9961 Train F1: 0.6761 Val F1: 0.6442 Test F1: 0.6784
+Dataset brightkite Graph 4 Feature 3 Node Class None Graph Class None
+Node: max56739, min11, mean14202.5
+Edge: max306640, min16, mean76708.0
+Anchor num 64, Batch size 1
+0 0 Loss 0.8052 Train AUC: 0.7464 Val AUC: 0.7158 Test AUC: 0.4200 Train Prec: 0.7076 Val Prec: 0.7036 Test Prec: 0.5624 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 10 Loss 0.8050 Train AUC: 0.7745 Val AUC: 0.7497 Test AUC: 0.4248 Train Prec: 0.7374 Val Prec: 0.7616 Test Prec: 0.5671 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 20 Loss 0.8038 Train AUC: 0.7460 Val AUC: 0.7005 Test AUC: 0.3634 Train Prec: 0.7075 Val Prec: 0.7337 Test Prec: 0.5411 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 30 Loss 0.8039 Train AUC: 0.7808 Val AUC: 0.6854 Test AUC: 0.3539 Train Prec: 0.7432 Val Prec: 0.7282 Test Prec: 0.5393 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 40 Loss 0.7992 Train AUC: 0.7582 Val AUC: 0.6803 Test AUC: 0.3806 Train Prec: 0.7148 Val Prec: 0.7177 Test Prec: 0.5493 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 50 Loss 0.7979 Train AUC: 0.7789 Val AUC: 0.7414 Test AUC: 0.4256 Train Prec: 0.7333 Val Prec: 0.7350 Test Prec: 0.5672 Train Recall: 1.0000 Val Recall: 0.9651 Test Recall: 0.9963 Train F1: 0.6741 Val F1: 0.6590 Test F1: 0.6666
+0 60 Loss 0.7985 Train AUC: 0.7989 Val AUC: 0.7431 Test AUC: 0.4288 Train Prec: 0.7509 Val Prec: 0.7359 Test Prec: 0.5697 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 70 Loss 0.8007 Train AUC: 0.7992 Val AUC: 0.7463 Test AUC: 0.4289 Train Prec: 0.7583 Val Prec: 0.7398 Test Prec: 0.5704 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 80 Loss 0.8031 Train AUC: 0.7434 Val AUC: 0.6647 Test AUC: 0.3881 Train Prec: 0.6912 Val Prec: 0.6785 Test Prec: 0.5461 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 90 Loss 0.8026 Train AUC: 0.7315 Val AUC: 0.6755 Test AUC: 0.3487 Train Prec: 0.6876 Val Prec: 0.6763 Test Prec: 0.5293 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+0 100 Loss 0.8026 Train AUC: 0.7557 Val AUC: 0.6524 Test AUC: 0.3166 Train Prec: 0.7289 Val Prec: 0.6931 Test Prec: 0.5207 Train Recall: 1.0000 Val Recall: 0.9807 Test Recall: 0.9963 Train F1: 0.6715 Val F1: 0.6630 Test F1: 0.6666
+-----------------Final-------------------
+0.436555 0.036273
