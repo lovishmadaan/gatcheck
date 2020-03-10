@@ -4,7 +4,7 @@
 
 This repository contains experiments on various tasks, namely - multi class node classification (nc), link prediction (lp), and pairwise node classification (pnc) (motivated from [P-GNN](https://arxiv.org/abs/1906.04817)), using the Graph Attention Network architecture.
 
-Paper Link - [GATCheck](www.cse.iitd.ac.in/~cs5150286/GATCheck.pdf)
+Paper Link - [GATCheck](http://www.cse.iitd.ac.in/~cs5150286/GATCheck.pdf)
 
 ## Setup
 
