@@ -1,0 +1,5 @@
+Namespace(anchor_num=64, approximate=-1, attention_heads=1, batch_size=8, cache=False, comment='0', cuda='0', dataset='protein', dropout=True, epoch_log=10, epoch_num=250, feature_dim=32, feature_pre=True, gpu=True, hidden_dim=256, layer_num=3, lr=0.01, model='GAT', normalize_adj=False, out_attention_heads=4, output_dim=32, permute=True, remove_link_ratio=0.2, repeat_num=5, rm_feature=False, task='link_pair')
+Using GPU 0
+Loading graph dataset: PROTEINS_full
+Loaded
+final num 364
