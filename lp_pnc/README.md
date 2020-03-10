@@ -4,7 +4,11 @@
 ## Run
 - 3-layer GAT, PPI, link
 ```bash
-python -u main.py --model GAT --layer_num 3 --dataset brightkite --task link |& tee out_brightkite.txt
+python -u main.py --model GAT --layer_num 3 --dataset ppi --task link |& tee out_ppi.txt
+```
+- 3-layer GAT, Proteins, link_pair
+```bash
+python -u main.py --model GAT --layer_num 3 --dataset proteins --task link_pair |& tee out_proteins.txt
 ```
 
 Complete list of parameters is present in `args.py`

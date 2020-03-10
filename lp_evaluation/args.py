@@ -44,6 +44,7 @@ def make_args():
     parser.add_argument('--attention_heads', dest='attention_heads', default=1, type=int)
     parser.add_argument('--out_attention_heads', dest='out_attention_heads', default=1, type=int)
     parser.add_argument('--activation', dest='activation', default="relu", type=str)
+    parser.add_argument('--agg', dest='agg', default="add", type=str)
     parser.add_argument('--feature_dim', dest='feature_dim', default=32, type=int)
     parser.add_argument('--hidden_dim', dest='hidden_dim', default=32, type=int)
     parser.add_argument('--output_dim', dest='output_dim', default=32, type=int)

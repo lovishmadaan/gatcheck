@@ -7,6 +7,8 @@ from torch_geometric.utils import add_self_loops, degree
 from torch.nn import init
 import pdb
 
+from gatconv_modified import GATConv_Modified
+
 ####################### Basic Ops #############################
 
 # # PGNN layer, only pick closest node for message passing
@@ -196,6 +198,45 @@ class GAT(torch.nn.Module):
             self.conv_first = tg.nn.GATConv(input_dim, hidden_dim, heads=attention_heads)
         self.conv_hidden = nn.ModuleList([tg.nn.GATConv(hidden_dim * attention_heads, hidden_dim, heads=attention_heads) for i in range(layer_num - 2)])
         self.conv_out = tg.nn.GATConv(hidden_dim * attention_heads, output_dim, heads=out_attention_heads)
+
+    def forward(self, data):
+        x, edge_index = data.x, data.edge_index
+        if self.feature_pre:
+            x = self.linear_pre(x)
+        x = self.conv_first(x, edge_index)
+        x = self.func(x)
+        if self.dropout:
+            x = F.dropout(x, training=self.training)
+        for i in range(self.layer_num-2):
+            x = self.conv_hidden[i](x, edge_index)
+            x = self.func(x)
+            if self.dropout:
+                x = F.dropout(x, training=self.training)
+        x = self.conv_out(x, edge_index)
+        x = F.normalize(x, p=2, dim=-1)
+        return x
+
+class GAT_agg(torch.nn.Module):
+    def __init__(self, input_dim, attention_heads, out_attention_heads, activation, feature_dim, hidden_dim, output_dim,
+                 feature_pre=True, layer_num=2, dropout=True, agg="add", **kwargs):
+        super(GAT_agg, self).__init__()
+        self.activation=activation
+        if activation == 'relu':
+            self.func = F.relu
+        elif activation == 'LeakyRelu':
+            self.func = F.leaky_relu
+        elif activation == 'tanh':
+            self.func = F.tanh
+        self.feature_pre = feature_pre
+        self.layer_num = layer_num
+        self.dropout = dropout
+        if feature_pre:
+            self.linear_pre = nn.Linear(input_dim, feature_dim)
+            self.conv_first = GATConv_Modified(feature_dim, hidden_dim, heads=attention_heads, agg=agg)
+        else:
+            self.conv_first = GATConv_Modified(input_dim, hidden_dim, heads=attention_heads, agg=agg)
+        self.conv_hidden = nn.ModuleList([GATConv_Modified(hidden_dim * attention_heads, hidden_dim, heads=attention_heads) for i in range(layer_num - 2)])
+        self.conv_out = GATConv_Modified(hidden_dim * attention_heads, output_dim, heads=out_attention_heads)
 
     def forward(self, data):
         x, edge_index = data.x, data.edge_index

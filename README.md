@@ -4,6 +4,8 @@
 
 This repository contains experiments on various tasks, namely - multi class node classification (nc), link prediction (lp), and pairwise node classification (pnc) (motivated from [P-GNN](https://arxiv.org/abs/1906.04817)), using the Graph Attention Network architecture.
 
+Paper Link - [GATCheck](www.cse.iitd.ac.in/~cs5150286/GATCheck.pdf)
+
 ## Setup
 
 - Install PyTorch from the official website. We are using 1.4.0 version for our experiments. Replace 10.2 with your cuda version.
@@ -27,25 +29,24 @@ $ pip install dgl-cu102 networkx tensorboardX
 
 ## Datasets
 
-We are working with four datasets:
+We are working with five datasets:
 
 - Protein Protein Interaction (PPI)
 - Proteins
 - Brightkite
 - Communities
+- Grid
 
-They can be downloaded by running the `get_data.sh` script. The communities dataset is loaded by the networkx library.
+They can be downloaded by running the `get_data.sh` script. The communities and grid datasets are loaded by the networkx library.
 
-## Folder
+## Folders
 
 The repository consist of four folders:
 
 - nc - This folder conatins code for node classification and is based on dgl library
-- lp_pnc - This folder conatins code for Link Prediction & Pairwise Node Classification with cross validation and is based on P-GNN code made public
-- brightkite_lp - This is similar to folder above and it consists of the heurestics that we adopted to make our approach scalable.
-- lp-eval - This consists of code base that we used for our hyperparameter tuning to perform our analyis on grid datasets
-
-They can be downloaded by running the `get_data.sh` script. The communities dataset is loaded by the networkx library.
+- lp_pnc - This folder contains the code for Link Prediction & Pairwise Node Classification with cross validation and is based on the P-GNN code made public on the repository mentioned in references.
+- lp_brightkite - This is similar to the folder above and it consists of the heurestics that we adopted to make our approach scalable.
+- lp_evaluation - This consists of code base that we used for our hyperparameter tuning to perform our analyis on grid and communities dataset.
 
 ## References
 

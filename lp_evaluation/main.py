@@ -17,7 +17,6 @@ writer_train = SummaryWriter(comment=args.task+'_'+args.model+'_'+args.comment+'
 writer_val = SummaryWriter(comment=args.task+'_'+args.model+'_'+args.comment+'_val')
 writer_test = SummaryWriter(comment=args.task+'_'+args.model+'_'+args.comment+'_test')
 
-
 # set up gpu
 if args.gpu:
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
@@ -37,6 +36,7 @@ if args.dataset=='All':
         datasets_name = ['communities', 'email', 'protein']
 else:
     datasets_name = [args.dataset]
+# if __name__ == '__main__':
 for dataset_name in datasets_name:
     # if dataset_name in ['communities','grid']:
     #     args.cache = False
@@ -48,6 +48,8 @@ for dataset_name in datasets_name:
         result_val = []
         result_test = []
         time1 = time.time()
+        print(__name__)
+        
         data_list = get_tg_dataset(args, dataset_name, use_cache=args.cache, remove_feature=args.rm_feature)
         time2 = time.time()
         print(dataset_name, 'load time',  time2-time1)
@@ -79,7 +81,7 @@ for dataset_name in datasets_name:
         output_dim = args.output_dim
         model = locals()[args.model](input_dim=input_dim, attention_heads=args.attention_heads, out_attention_heads=args.out_attention_heads, activation=args.activation, feature_dim=args.feature_dim,
                     hidden_dim=args.hidden_dim, output_dim=output_dim,
-                    feature_pre=args.feature_pre, layer_num=args.layer_num, dropout=args.dropout).to(device)
+                    feature_pre=args.feature_pre, layer_num=args.layer_num, dropout=args.dropout, agg=args.agg).to(device)
         # loss
         optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=5e-4)
         if 'link' in args.task:
